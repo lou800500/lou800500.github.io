@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크트리</title>
+    
+    <script>
+        function hey() {
+            let a_dict = {}
+
+            let a = [
+            {'name': '영수', 'age': 27},
+            {'name': '철수', 'age': 15},
+            {'name': '영희', 'age': 20}
+        ];
+
+            console.log(a[0]['name']);
+            console.log(a[1]['age']);
+
+        }
+    </script>
+
+    <style>
+        @import url('/CSS/pretendard.css');
+        *{
+            font-family: pretendard;
+        }
+
+        .image{
+            width: 200px;
+            height: 200px;
+            background-image: url('/images/profile_rtan.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: fixed;
+            bottom:  15px;
+            left: auto;
+        }
+
+        body{
+            background-color: #44398a;
+        }
+
+        .profile{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-image: url("profile.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid white;
+        }
+        .profile:hover{
+            cursor: pointer;
+        }
+
+        .main{
+            color: white;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .sub{
+            color: white;
+            font-size: 14px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap{
+            width: 350px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            /* line-height: 50px;
+            margin: 5px auto 5px auto;
+            text-align: center; */
+
+            height: 50px;
+            width: 300px;
+
+            background-color: white;
+
+            color: black;
+            text-decoration: none;
+
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 3px 3px 5px 0px black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a:hover{
+            background-color: #dddddd;
+            transition: 300ms;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile" onclick="hey()"></div>
+        <h1 class="main">세현</h1>
+        <p class="sub">인간 시대의 끝이 도래했다...</p>
+        <a target="_black" href="https://www.naver.com">ChatGPT</a>
+        <a target="_black" href="https://www.google.com">DALLE</a>
+        <a target="_black" href="https://www.daum.net">Stable Diffusion</a>
+        <a target="_black" href="https://www.github.com">Craiyon</a>
+
+        
+        
+        
+        
+    </div>
+    <div class="image">
+    </div>
+</body>
+</html>
